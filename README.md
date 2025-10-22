@@ -9,7 +9,6 @@ Other nodes can subscribe to this topic to trigger actions based on the dice rol
 ## 🧠 Features
 - Publishes a random dice number (1–6) every 2 seconds  
 - Interactive and can be subscribed to by other ROS 2 nodes  
-- Simple and fun way to learn publishing topics in ROS 2  
 
 ---
 
