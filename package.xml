@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dice_roller</name>
+  <version>0.0.1</version>
+  <description>ROS 2 Dice Roller: Publishes a random dice number on a topic.</description>
+  <maintainer email="you@example.com">R. Soorya Prakash</maintainer>
+  <license>MIT</license>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+</package>
