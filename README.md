@@ -1,16 +1,15 @@
-# 🎯 Real-Time Color Tracker (OpenCV)
+# 🎲 ROS 2 Dice Roller
 
-A simple Python project that tracks a specific color (red by default) in real-time using your webcam.  
-It highlights the detected color region with a circle and displays its coordinates.
+A fun ROS 2 Python project that simulates a virtual dice.  
+The node publishes a random dice number (1–6) every 2 seconds on a ROS 2 topic.  
+Other nodes can subscribe to this topic to trigger actions based on the dice roll.
 
 ---
 
 ## 🧠 Features
-- Real-time color detection using OpenCV  
-- Tracks red color (can be changed to any color using HSV range)  
-- Displays the detected area and coordinates on the live feed  
-- Noise reduction using morphological operations (erode & dilate)  
-- Quit anytime using the **‘q’** key  
+- Publishes a random dice number (1–6) every 2 seconds  
+- Interactive and can be subscribed to by other ROS 2 nodes  
+- Simple and fun way to learn publishing topics in ROS 2  
 
 ---
 
@@ -19,12 +18,14 @@ It highlights the detected color region with a circle and displays its coordinat
 
 ## 🚀 How to Run
 ```bash
-# 1. Clone the repository
+# 1. Clone the repository into your ROS 2 workspace
+cd ~/ros2_ws/src
 git clone https://github.com/soorya-prakash-r/ros2_3502.git
-cd color_tracker
 
-# 2. Install dependencies
-pip install opencv-python numpy
+# 2. Build the workspace
+cd ~/ros2_ws
+colcon build
+source install/setup.bash
 
-# 3. Run the program
-python color_tracker.py
+# 3. Run the dice roller node
+ros2 run dice_roller dice_roller
