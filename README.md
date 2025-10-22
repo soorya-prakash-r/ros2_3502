@@ -12,9 +12,6 @@ Other nodes can subscribe to this topic to trigger actions based on the dice rol
 
 ---
 
-
----
-
 ## 🚀 How to Run
 ```bash
 # 1. Clone the repository into your ROS 2 workspace
